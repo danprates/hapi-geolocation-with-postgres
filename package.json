@@ -1,0 +1,33 @@
+{
+  "name": "hapi-geolocation-with-postgres",
+  "version": "1.0.0",
+  "description": "Geolocation search using Postgres` Earth distance",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/",
+    "dev": "nodemon src/",
+    "migration:make": "knex migrate:make",
+    "migration:up": "knex migrate:up",
+    "migration:down": "knex migrate:down",
+    "seed:make": "knex seed:make",
+    "seed:run": "knex seed:run"
+  },
+  "keywords": [
+    "hapijs",
+    "postgres",
+    "knex",
+    "docker",
+    "docker-compose"
+  ],
+  "author": "Daniel Prates",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.1",
+    "@hapi/joi": "^17.1.1",
+    "knex": "^0.21.6",
+    "pg": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
